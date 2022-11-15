@@ -12,4 +12,8 @@ public class Account {
         this.password = password;
         this.blocked = false;
     }
+    @Override
+    public String toString() {
+        return this.name + "," + this.date + "," + this.email + "," + this.password + "," + this.blocked + "\n";
+    }
 }

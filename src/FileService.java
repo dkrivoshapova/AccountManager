@@ -1,7 +1,5 @@
-import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
-import java.io.FileReader;
 
 public class FileService {
     private static FileService instance;
@@ -13,7 +11,8 @@ public class FileService {
         return instance;
     }
 
-    public static ArrayList<Account> ReadCSV(String filename) throws IOException {
+    public static ArrayList<Account> readCSV(String filename) throws IOException {
+        ArrayList<Account> group = new ArrayList<Account>();
         BufferedReader reader = null;
         String line = "";
         try {
@@ -22,18 +21,41 @@ public class FileService {
             while ((line = reader.readLine()) != null) {
                 if (checkFirstLine) {
                     checkFirstLine = false;
+                    continue;
                 }
                 String[] row = line.split(",");
-                boolean b = (Integer.parseInt(row[4]) != 0);
-                Account account = new Account(row[0],row[1], row[2], row[3], b);
+                boolean b = Boolean.parseBoolean(row[5]) ;
+                Account account = new Account(row[1], row[2], row[3], row[4], b);
+                group.add(account);
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            reader.close();
+            if (reader != null) {
+                reader.close();
+            }
         }
-        ArrayList<Account> group = new ArrayList<Account>();
-        return  group;
+        return group;
     }
+    public static void writeCSV(String filename, ArrayList<Account> group) throws IOException {
+        BufferedWriter writer = null;
+        try  {
+            writer = new BufferedWriter(new FileWriter(filename));
+            writer.write("id,ФИО,дата рождения,email,пароль,blocked\n");
+            int cnt = 1;
+            for (Account person : group) {
+                writer.write(cnt + "," + person.toString());
+                cnt++;
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (writer != null) {
+                writer.close();
+            }
+        }
+    }
+
 }
 
