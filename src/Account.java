@@ -16,4 +16,14 @@ public class Account {
     public String toString() {
         return this.name + "," + this.date + "," + this.email + "," + this.password + "," + this.blocked + "\n";
     }
+
+    public String getEmail() {
+        return email;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public boolean isBlocked() {
+        return blocked;
+    }
 }
