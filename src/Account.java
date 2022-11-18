@@ -26,4 +26,7 @@ public class Account {
     public boolean isBlocked() {
         return blocked;
     }
+    public void setBlock() {
+        this.blocked = true;
+    }
 }
