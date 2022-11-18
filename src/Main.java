@@ -57,9 +57,9 @@ public class Main {
         //wrong password A 5
         try {
             accountManager.login(a.getEmail(), "123");
-            } catch (WrongCredentialsException | AccountBlockedException e) {
-                System.out.println(e.getMessage());
-            }
+        } catch (WrongCredentialsException | AccountBlockedException e) {
+            System.out.println(e.getMessage());
+        }
 
         //right password A
         try {

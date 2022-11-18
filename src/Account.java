@@ -12,6 +12,7 @@ public class Account {
         this.password = password;
         this.blocked = false;
     }
+
     @Override
     public String toString() {
         return this.name + "," + this.date + "," + this.email + "," + this.password + "," + this.blocked + "\n";
@@ -20,12 +21,15 @@ public class Account {
     public String getEmail() {
         return email;
     }
+
     public String getPassword() {
         return password;
     }
+
     public boolean isBlocked() {
         return blocked;
     }
+
     public void setBlock() {
         this.blocked = true;
     }
