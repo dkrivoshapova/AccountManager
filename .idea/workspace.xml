@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bd1b37f-088f-4fa0-8d70-efad560dd56c" name="Changes" comment="read and write to csv">
+    <list default="true" id="8bd1b37f-088f-4fa0-8d70-efad560dd56c" name="Changes" comment="File Acount Manager">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AccountManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccountManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <workItem from="1667966327013" duration="3090000" />
       <workItem from="1668225745601" duration="12000" />
       <workItem from="1668497821017" duration="10211000" />
-      <workItem from="1668684986939" duration="3715000" />
+      <workItem from="1668684986939" duration="5290000" />
     </task>
     <task id="LOCAL-00001" summary="new files">
       <created>1667391442554</created>
@@ -102,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668531267596</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="File Acount Manager">
+      <created>1668766085442</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668766085442</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +130,7 @@
     <MESSAGE value="add FileServece" />
     <MESSAGE value="add readCSV" />
     <MESSAGE value="read and write to csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="read and write to csv" />
+    <MESSAGE value="File Acount Manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="File Acount Manager" />
   </component>
 </project>
